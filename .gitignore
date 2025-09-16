@@ -1,0 +1,15 @@
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Local data
+downloads/
+outputs/
+
+# OS junk
+.DS_Store
+Thumbs.db
