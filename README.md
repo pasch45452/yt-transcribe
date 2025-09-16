@@ -114,6 +114,8 @@ python app.py URL --model base --device cpu --output-dir outputs
 ```
 yt-transcribe/
 ├─ app.py            # CLI entrypoint (prompts for URL if omitted)
+├─ app_gui.py        # Easy to use GUI that takes in multiple URLs
+├─ batch_transcriber.py      
 ├─ downloader.py     # Fast audio-only downloader (no re-encode)
 ├─ writers.py        # Helpers to write TXT/SRT/VTT
 ├─ requirements.txt
