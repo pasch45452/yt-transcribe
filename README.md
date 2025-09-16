@@ -71,7 +71,6 @@ Create `urls.txt` (one URL per line, `#` comments allowed), then:
 python batch_transcribe.py --file urls.txt --device cpu --model base
 ```
 ---
-
 **Direct (no prompt):**
 ```bash
 python app.py "https://www.youtube.com/watch?v=VIDEO_ID"
@@ -80,6 +79,18 @@ python app.py "https://www.youtube.com/watch?v=VIDEO_ID"
 By default, transcripts are written to `outputs/` and audio is cached in `downloads/`.
 
 ---
+
+### GUI mode (no terminal needed)
+
+The project includes a simple GUI: **`app_gui.py`**  
+Paste one or many YouTube URLs (one per line), pick a model/device, and click **Transcribe**.  
+Progress and logs show in the window; outputs are saved as `.txt`, `.srt`, `.vtt`.
+
+**Run from source (Windows/macOS):**
+```bash
+# in the project folder
+python app_gui.py
+```
 
 ## Options
 ```bash
