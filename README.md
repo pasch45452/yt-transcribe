@@ -1,7 +1,7 @@
 
 # yt-transcribe
 
-A tiny Python CLI that downloads a YouTube video and generates a transcript (TXT, SRT, and VTT) using [faster-whisper]. Works even if YouTube doesn't provide a transcript.
+A Python App that downloads a YouTube video and generates a transcript (TXT, SRT, and VTT) using [faster-whisper]. Works even if YouTube doesn't provide a transcript. There is a GUI that allows for multiple YouTube URLs to be included at once.  
 
 ---
 
