@@ -64,6 +64,13 @@ pip install -r requirements.txt
 python app.py
 # Paste YouTube URL when prompted
 ```
+### Batch mode
+Create `urls.txt` (one URL per line, `#` comments allowed), then:
+
+```bash
+python batch_transcribe.py --file urls.txt --device cpu --model base
+```
+---
 
 **Direct (no prompt):**
 ```bash
