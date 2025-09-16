@@ -1,4 +1,3 @@
-# batch_transcribe.py
 """
 Batch-run yt-transcribe's app.py with clear, live progress output.
 
@@ -14,6 +13,7 @@ import argparse
 import sys
 import subprocess
 from pathlib import Path
+
 
 def read_urls(file_path: str | None, inline_urls: list[str]) -> list[str]:
     urls: list[str] = []
@@ -32,6 +32,7 @@ def read_urls(file_path: str | None, inline_urls: list[str]) -> list[str]:
             seen.add(u)
             out.append(u)
     return out
+
 
 def main():
     parser = argparse.ArgumentParser(description="Batch-run yt-transcribe (app.py) for many URLs with live progress.")
@@ -87,6 +88,7 @@ def main():
 
     print(f"\n=== Summary: {total - failures} ok / {failures} failed ===")
     sys.exit(0 if failures == 0 else 2)
+
 
 if __name__ == "__main__":
     main()

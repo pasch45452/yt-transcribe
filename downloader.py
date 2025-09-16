@@ -1,6 +1,7 @@
 import os
 from yt_dlp import YoutubeDL
 
+
 def download_audio(url: str, out_dir: str) -> str:
     os.makedirs(out_dir, exist_ok=True)
 
